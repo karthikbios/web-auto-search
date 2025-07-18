@@ -26,7 +26,7 @@ def search_in_same_tab(words):
         # Type and search the word
         pyautogui.write(word, interval=0.05)
         pyautogui.press("enter")
-        print(f"🔍 Searched: {word}")
+        print(f"Searched: {word}")
         time.sleep(5)
 
 if __name__ == "__main__":
