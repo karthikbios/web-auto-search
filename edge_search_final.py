@@ -5,13 +5,13 @@ def get_input():
     user_input = input("Enter up to 30 words (separated by space): ").strip()
     words = user_input.split()
     if len(words) > 30:
-        print("⚠️ Limit exceeded! Only the first 30 words will be used.")
+        print("Limit exceeded! Only the first 30 words will be used.")
         words = words[:30]
     return words
 
 def search_in_same_tab(words):
-    print("🖱️ Place your mouse cursor inside the search box of Microsoft Edge tab and leave it there.")
-    input("✅ Press Enter once ready...")
+    print("Place your mouse cursor inside the search box of Microsoft Edge tab and leave it there.")
+    input("Press Enter once ready...")
 
     for word in words:
         # Click at current mouse location (search bar)
